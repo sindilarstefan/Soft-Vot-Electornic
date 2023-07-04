@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Register</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;
+background-image: url(:/imagini/Imagini/bg_2.jpg);
+</string>
+  </property>
+  <widget class="QLabel" name="label_registrartion">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>325</x>
+     <y>50</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;
+background: transparent;</string>
+   </property>
+   <property name="text">
+    <string>Registration</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_registration">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>110</y>
+     <width>210</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="accessibleName">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Modern No. 20&quot;;
+color: white;</string>
+   </property>
+   <property name="title">
+    <string>Registration</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>156</width>
+      <height>393</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_date">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_nume">
+       <property name="text">
+        <string>Nume:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_nume">
+       <property name="placeholderText">
+        <string>ex: Popescu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_prenume">
+       <property name="text">
+        <string>Prenume:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_prenume">
+       <property name="placeholderText">
+        <string>ex: Ion</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_cnp">
+       <property name="text">
+        <string>CNP:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_cnp">
+       <property name="placeholderText">
+        <string>ex: 5021005556841</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_email">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Email:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_email">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>ex: mail@gmail.com</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_passward">
+       <property name="text">
+        <string>Password:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_passward">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_pass_cofirm">
+       <property name="text">
+        <string>Confirm password:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_pass_confirm">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_register">
+       <property name="styleSheet">
+        <string notr="true">#pb_register{
+    background-color: #000000;
+}
+#pb_register:hover { 
+    background-color: #333333;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Register</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

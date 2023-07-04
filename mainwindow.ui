@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ATM Vot</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget_login_corp" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>350</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #00020A;</string>
+    </property>
+    <widget class="QLabel" name="label_login">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>LOG IN</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_logo" native="true">
+     <property name="geometry">
+      <rect>
+       <x>143</x>
+       <y>60</y>
+       <width>64</width>
+       <height>64</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/imagini/Imagini/logo_4.png);
+</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_login">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>200</y>
+       <width>210</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Modern No. 20&quot;;
+color: white;</string>
+     </property>
+     <property name="title">
+      <string>Login</string>
+     </property>
+     <widget class="QLabel" name="label_register">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>205</y>
+        <width>140</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Century&quot;;
+color: white;</string>
+      </property>
+      <property name="text">
+       <string>Don't have an account?</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_register">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>230</y>
+        <width>60</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pb_register{
+    background-color: #000000;
+	font: 10pt &quot;Modern No. 20&quot;;
+	color: white;
+	text-decoration: underline;  
+}
+#pb_register:hover { 
+    background-color: #333333;
+	font: 10pt &quot;Modern No. 20&quot;;
+	color: white;
+	text-decoration: underline;  
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>144</width>
+        <height>149</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_date">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_email">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Email:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_email">
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_passward">
+         <property name="text">
+          <string>Password:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_passward">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pb_login">
+         <property name="styleSheet">
+          <string notr="true">#pb_login{
+    background-color: #000000;
+}
+#pb_login:hover { 
+    background-color: #333333;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Login</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="pb_fg_password">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>260</y>
+        <width>120</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#pb_fg_password{
+    background-color: #000000;
+	font: 10pt &quot;Modern No. 20&quot;;
+	color: white;
+	text-decoration: underline;  
+}
+#pb_fg_password:hover { 
+    background-color: #333333;
+	font: 10pt &quot;Modern No. 20&quot;;
+	color: white;
+	text-decoration: underline;  
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Forgot password?</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_imagine" native="true">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>0</y>
+      <width>850</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/imagini/Imagini/bg_1.jpg)</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
